@@ -25,4 +25,4 @@ def quadcalc():
         print("root 1: ", root1)
         print("root 2: ", root2)
         time.sleep(2)
-    print("thank you for using quadcalc and now u wont fail advanced functions like andrew did")
+    print("thank you for using quadcalc, have a nice day!")
