@@ -1,0 +1,28 @@
+import time
+def quadcalc():
+    print("Roots of a quadratic function calculator")
+    #this is a title (i didnt know how to make a title too lazy to google it ty
+    print("please use the format of ax^2+bx+c=0")
+    #this is to make sure that people aren't dumb
+    a= int(input("enter the first coefficient:"))
+    b= int(input("enter the second coefficient:"))
+    c= int(input("enter the third coefficient:"))
+    #this is for people to set their good stuffs so this actually works
+    print("note that if the discriminant is a negative value, the function will not have any REAL roots")
+    #this is just logic
+    time.sleep(2)
+    print("calculating...")
+    time.sleep(2)
+    discriminant= (b**2)-4*a*c
+    if discriminant < 0:
+        print("sorry this function has no real roots, run the quadcalc function again")
+        time.sleep(2)
+    if discriminant >= 0:
+        thingy = discriminant**0.5
+        root1 = (-b+thingy)/(2*a)
+        root2 = (-b-thingy)/(2*a)
+        print("your roots are: ")
+        print("root 1: ", root1)
+        print("root 2: ", root2)
+        time.sleep(2)
+    print("thank you for using quadcalc and now u wont fail advanced functions like andrew did")
